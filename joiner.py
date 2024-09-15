@@ -39,7 +39,7 @@ class BloxEmpireJoiner:
         except Exception as e:
             print(e)
             self.conn = self.connection()
-            return None, None
+            return None
 
     def vailedtoken(self):
         status, data = self.request("GET", "/user/get-user")
